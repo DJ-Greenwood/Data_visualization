@@ -73,26 +73,39 @@ pip install -r requirements.txt
 - Click on a country on the map to view detailed information in a popup.
 
 ## Project Structure
-```
-world-fertility-data-visualization/
-├── data/
-│   ├── undesa_pd_2019_world_fertility_dataset.xlsx
-│   └── Map_data/
-│       └── ne_110m_admin_0_countries.shp
-├── images/
-│   ├── TFR_visualization.png
-│   ├── MAC_visualization.png
-│   └── ASFR_visualization.png
-├── world_fertility_visualization.ipynb
-├── requirements.txt
-├── README.md
-└── LICENSE
+```mermaid
+graph TD;
+    A[**DATA_VISUALIZATION**] 
+    A --> B[**Notebooks**] 
+    A --> C[**Data**]
+    A --> F[**Documentation**]
+    
+    B --> D[world_fertility_visualization.ipynb]
+    B --> E[requirements.txt]
+    
+    F --> G[README.md]
+    F --> H[LICENSE]
+
+    C --> I[**Datasets**]
+    C --> J[**Map Data**]
+    C --> K[**Images**]
+
+    I --> L[undesa_pd_2019_world_fertility_dataset.xlsx]
+    J --> M[ne_110m_admin_0_countries.shp]
+    
+    K --> N[TFR_visualization.png]
+    K --> O[MAC_visualization.png]
+    K --> P[ASFR_visualization.png]
+
 ```
 - `data/`: Contains the fertility dataset and map shapefiles.
 - `images/`: Screenshots of the visualizations.
 - `world_fertility_visualization.ipynb`: The Jupyter Notebook with code and explanations.
 - `requirements.txt`: List of required Python packages.
 - `LICENSE`: License information for the project.
+  
+##### Note: All of the map files are not listed in this structure.
+
 
 ## Visualization Overview
 - **Total Fertility Rate (TFR)**
