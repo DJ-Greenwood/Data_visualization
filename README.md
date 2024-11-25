@@ -9,8 +9,6 @@ World Fertility Data Visualization Project
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Visualization Overview](#visualization-overview)
-- [Evaluation and Feedback](#evaluation-and-feedback)
-- [Contributing](#contributing)
 - [License](#license)
 - [References](#references)
 
@@ -112,57 +110,9 @@ graph TD;
 - **Mean Age at Childbearing (MAC)**
 - **Age-Specific Fertility Rate (ASFR)**
 
-## Evaluation and Feedback
-
-### Evaluation Process
-- **Participants**: One English tutor and two mathematics professors.
-- **Procedure**: Participants interacted with the map, exploring different regions, indicators, and time periods. Feedback was collected on usability, clarity, and effectiveness.
-
-### Synthesis of Findings
-**Positive Feedback**:
-- The interactive map was intuitive and user-friendly.
-- Visual representations effectively highlighted regional differences.
-- The ability to select different indicators and years enhanced engagement.
-
-**Suggestions for Improvement**:
-- **Date Slider Granularity**:
-    - **Issue**: The slider was too granular, cycling through days instead of years.
-    - **Resolution**: Adjusted the slider to increment by years for better usability.
-- **Consistency Between Datasets**:
-    - **Issue**: Selected date did not remain consistent when switching indicators.
-    - **Resolution**: Implemented code to retain the selected date across different datasets, defaulting to the closest available date if necessary.
-- **Color Mapping Clarity**:
-    - **Issue**: The color scale was challenging to interpret due to data concentration in lighter shades.
-    - **Resolution**: Modified the color palette and applied data normalization techniques to enhance visual differentiation.
-
-## Contributing
-Contributions are welcome! Please follow these steps:
-
-### Fork the Repository
-Click the "Fork" button at the top right corner of this page.
-
-### Clone Your Fork
-```bash
-git clone https://github.com/yourusername/world-fertility-data-visualization.git
-```
-
-### Create a New Branch
-```bash
-git checkout -b feature/your-feature-name
-```
-
-### Make Changes and Commit
-```bash
-git commit -am 'Add new feature'
-```
-
-### Push to the Branch
-```bash
-git push origin feature/your-feature-name
-```
-
-### Submit a Pull Request
-Open a pull request explaining your changes.
+### Geographic and Temporal Dimensions
+- Regional Comparisons: Show spatial differences in fertility trends across regions or countries.
+- Time-Series Analysis: Highlight historical and future trends for TFR, MAC, and ASFR.
 
 ## License
 This project is licensed under the MIT License.
